@@ -35,7 +35,7 @@ jobs:
       - name: 'Terraform init'
         id: init
         run: |
-          cd rg-connectivity-001/*.tf
+          cd /terraform/rg-connectvity1/*.tf
           terraform init          
 
       - name: 'Terraform plan'
