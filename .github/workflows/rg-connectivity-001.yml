@@ -35,17 +35,17 @@ jobs:
       - name: 'Terraform init'
         id: init
         run: |
-          cd terraform/rg-connectivity-001
+          cd .github/workflows/rg-connectivity-001/*.tf
           terraform init          
 
       - name: 'Terraform plan'
         id: plan
         run: |
-          cd terraform/rg-connectivity-001
+          cd .github/workflows/rg-connectivity-001/*.tf
           terraform plan
                     
       - name: 'Terraform apply'
         id: apply
         run: |
-          cd terraform/rg-connectivity-001
+          cd .github/workflows/rg-connectivity-001/*.tf
           terraform apply -auto-approve  
