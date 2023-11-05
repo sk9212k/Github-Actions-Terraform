@@ -41,11 +41,11 @@ jobs:
       - name: 'Terraform plan'
         id: plan
         run: |
-          cd rg-connectivity-001/*.tf
+          cd terraform/rg-connectivity1
           terraform plan
                     
       - name: 'Terraform apply'
         id: apply
         run: |
-          cd rg-connectivity-001/*.tf
+          cd terraform/rg-connectivity1
           terraform apply -auto-approve  
