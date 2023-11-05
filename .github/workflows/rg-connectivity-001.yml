@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     paths:
-      - 'rg-connectivity-001/*.tf'
+      - 'terraform/rg-connectivity1'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
       - name: 'Terraform init'
         id: init
         run: |
-          cd /terraform/rg-connectvity1/
+          cd terraform/rg-connectivity1
           terraform init          
 
       - name: 'Terraform plan'
