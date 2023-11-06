@@ -8,6 +8,14 @@ variable "ResourceGroup" {
     default     = "rg-connectivity-network-001"   
 }
 
+variable "vnet" {
+  type = any
+  default = {
+    "vNetName"                      = "vnet-connectivity-001"
+    "address_space"                 = ["172.16.0.0/16"]
+  }  
+}
+
 variable "Subnets" {
     type = any
     default = {
