@@ -5,5 +5,5 @@ variable "Location" {
 
 variable "ResourceGroup" {
     type                        = string
-    default                     = "rg-keyvault-001"   
+    default                     = "zb-keyvault-001"   
 }
