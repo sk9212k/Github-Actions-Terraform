@@ -7,9 +7,9 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name     = "rg-terraform-state-001"
-    storage_account_name    = "cloudninjaterraformstate"
+    storage_account_name    = "zirconblue"
     container_name          = "tfstate"
-    key                     = "GitHub-Terraform-rg-connectivity-001"
+    key                     = "Fv23Sd3cuhx74/uQgIFINjaA6XyXluV1p++h0XYzt8pERa/yKbTjaX2R+4jtfxx89SO6vvNOHuW9+AStWlPYVg=="
   }
 }
 provider "azurerm" {
