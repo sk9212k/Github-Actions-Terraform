@@ -86,4 +86,4 @@ resource "azurerm_virtual_network_gateway_connection" "VPN-Connection" {
 
   shared_key = data.azurerm_key_vault_secret.VPNSharedSecret.value
 
-
+}
