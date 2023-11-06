@@ -40,8 +40,3 @@ variable "LocalGateway" {
     "subnet2"                         = "192.168.10.0/24"    
   }  
 }
-
-data "azurerm_key_vault" "zb-cloudninja-vpn-001" {
-  name                = "zb-cloudninja-vpn-001"
-  resource_group_name = "rg-keyvault-001"
-}
