@@ -41,7 +41,7 @@ jobs:
       - name: 'Terraform plan'
         id: plan
         run: |
-          cd Subscriptions/Sub-MVP-Sponsorship/rg-loganalytics-001
+          cd terraform/rg-loganalytics-001
           terraform plan
           
       - name: 'Terraform apply'
