@@ -13,3 +13,4 @@ resource "azurerm_log_analytics_workspace" "rg-loganalytics-001" {
 }
 
 
+##
