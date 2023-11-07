@@ -6,8 +6,6 @@ name: rg-loganalytics-001.yml
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: 
-      - 'create-infra'
     paths:
       - 'terraform/rg-loganalytics-001/*.tf'
 
