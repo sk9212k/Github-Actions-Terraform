@@ -49,3 +49,6 @@ jobs:
         run: |
           cd terraform/rg-loganalytics-001
           terraform apply -auto-approve
+
+
+##
