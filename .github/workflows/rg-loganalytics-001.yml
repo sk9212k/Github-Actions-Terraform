@@ -37,6 +37,12 @@ jobs:
         run: |
           cd terraform/rg-loganalytics-001
           terraform init
+      
+      - name: 'Terraform refresh'
+        id: refresh
+        run: |
+          cd terraform/rg-loganalytics-001
+          terraform refresh
 
       - name: 'Terraform plan'
         id: plan
@@ -49,6 +55,6 @@ jobs:
         run: |
           cd terraform/rg-loganalytics-001
           terraform apply -auto-approve
-
+    
 
 ##
